@@ -35,12 +35,12 @@ To run the codes and check the results, please see the next section to find the 
 * Correlation between the SD:aSD duplex length, base-pairing energy and fitness(R) 
 * Position-wise nucleotide composition of SD variants across twenty fitness ranked goups under three RBS contexts
 
-* single-molecule FRET (matlab)
+* Single-molecule FRET (matlab)
 
 
 
 
-#Contact Information
+# Contact Information
 For more info. about the project, please contact
 * PI: David H. H. Chou (chouhh@ntu.edu.tw)
 As for technical support, feel free to contact
