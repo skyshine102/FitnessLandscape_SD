@@ -5,7 +5,7 @@ This is the repository to store the  code for implementing the figures in public
 * Python 3.6
   * packages required:
 * R
-  * packages required:
+  * packages required: lattice, vioplot
 * Julia Language (v1.0)
   * packages required: 
 * Matlab 
