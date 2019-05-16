@@ -3,11 +3,11 @@ This is the repository to store the  code for implementing the figures in public
 
 # Environment
 * Python 3.6
-  * packages required:
+  * packages required: pandas, matplotlib, numpy, itertools, scipy,sklearn
 * R
   * packages required: lattice, vioplot
 * Julia Language (v1.0)
-  * packages required: 
+  * packages required: DelimitedFiles, Plots, Random, Statistics, Distributions
 * Matlab 
 
 # Usage
