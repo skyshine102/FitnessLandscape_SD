@@ -10,12 +10,12 @@
 
 This is the repository to store the  code for implementing the analysis and plotting in publication "Global fitness landscapes of the Shine-Dalgarno sequence".
 
-# Environment
+# Dependencies
 * Python 3.6
   * packages required: pandas, matplotlib, numpy, itertools, scipy,sklearn
 * R
   * packages required: lattice, vioplot
-* Julia Language (v1.0)
+* Julia Language (>= v1.0)
   * packages required: DelimitedFiles, Plots, Random, Statistics, Distributions
 * Matlab 
 
