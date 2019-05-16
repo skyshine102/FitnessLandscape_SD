@@ -39,8 +39,11 @@ ViennaCompare <- function(f){
   points(x = BoxDF$XMean, y = BoxDF$YMean, pch = 20, col = "red", cex = 2.5) # Mean
   
   print(cor.test(x, y, method = "pearson", exact = FALSE)$estimate)
+  print(cor.test(x, y, method = "pearson", exact = FALSE)$p.value)
   print(cor.test(x, y, method = "spearman", exact = FALSE)$estimate)
+  print(cor.test(x, y, method = "spearman", exact = FALSE)$p.value)
   
+  write.table(x = data.frame(x,y), file = paste0("../../Result/R_Vienna_vs_exp/",f,"_dG_vs_exp.csv"), sep = ",", row.names = F)
   dev.off()
 }
 
@@ -80,8 +83,9 @@ ViennaDuplex <- function(f){
   XMin <- 3.2
   BDF <- BinDataFrame(x = x, y = y, xlim = c(0,XMin), n = 20)
   
-  print(table(y))
   print(cor.test(x, y, method = "pearson", exact = FALSE)$estimate)
+  print(cor.test(x, y, method = "pearson", exact = FALSE)$p.value)
+  write.table(x = data.frame(x,y), file = paste0("../../Result/R_Vienna_vs_exp/",f,"_duplex_vs_exp.csv"), sep = ",", row.names = F)
   
   ## plotting
   svg(filename = paste0("../../Result/R_Vienna_vs_exp/",f,"_duplex_vs_exp.svg"), width = 6, height = 6) # open picture file
@@ -134,8 +138,9 @@ x <- -dG$LogMean
 y <- duplex[,2]
 BDF <- BinDataFrame(x = x, y = y, xlim = c(0,14), n = 20)
 
-print(table(y))
 print(cor.test(x, y, method = "pearson", exact = FALSE)$estimate)
+print(cor.test(x, y, method = "pearson", exact = FALSE)$p.value)
+write.table(x = data.frame(x,y), file = paste0("../../Result/R_Vienna_vs_exp/dG_vs_duplex.csv"), sep = ",", row.names = F)
 
 ## plotting
 svg(filename = "../../Result/R_Vienna_vs_exp/dG_vs_duplex.svg", width = 6, height = 6) # open picture file
