@@ -1,7 +1,7 @@
 # FitnessLandscape_SD
 
 <p align=center>
-<a target="_blank"><img src="https://img.shields.io/conda/pn/conda-forge/python.svg"></a>
+<a target="_blank"><img src="https://img.shields.io/powershellgallery/p/Az.Storage.svg"></a>
 <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/python-%3E=_3.6-green.svg"></a>
 <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/Julia-v1.1-blueviolet.svg"></a>
 <a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
@@ -20,7 +20,11 @@ This is the repository to store the  code for implementing the analysis and plot
 * Matlab 
 
 # Usage
-To run the codes and check the results, please see the next section to find the designated main file. 
+To run the codes and check the results, please see the next section to find the designated main file.
+Take python as example: 
+  1. git clone the repo
+  2. python ./FitnessLandscape_SD/src/Python/main_all_script.py
+
 
 # Table of Contents
 * Fitness Distribution of SD (python)
