@@ -22,10 +22,12 @@ This is the repository to store the  code for implementing the analysis and plot
 # Usage
 To run the codes and check the results, please see the next section to find the designated main file.
 Take python as example: 
-'''
+
+```
 git clone https://github.com/skyshine102/FitnessLandscape_SD.git
 python ./FitnessLandscape_SD/src/Python/main_all_script.py
-'''  
+```  
+
 Note that you need to configurate the path within the code.
 
 # Table of Contents
