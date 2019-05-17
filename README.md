@@ -29,7 +29,7 @@ Take python as example:
 
 ### Python 
   * Fitness Distribution
-  * Context dependence of the SD G-P associations
+  * Context dependence of the G-P associations
   * Relationship between the finess of a variant and the mean fitness of its single-mutation neighbors
   * Relationship between the fitness of a SD variants and the abundance of beneficial, neutral, and deleterious mutations
   * Relationship between fitness and nucleotide composition
