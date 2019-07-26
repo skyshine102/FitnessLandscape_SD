@@ -502,6 +502,10 @@ def permutation_test_on_correlation(array1,array2, n_samples, tail = 2):
     if tail == 2:
         p = np.sum(np.abs(perm_replicates)>r_obs)/len(perm_replicates)
     elif tail == 1:
-        p = np.sum(perm_replicates>r_obs)/len(perm_replicates)
+        if r_obs > 0:
+            p = np.sum(perm_replicates > r_obs)/len(perm_replicates)
+        elif r_obs >0:
+            p = np.sum(perm_replicates < r_obs)/len(perm_replicates)
+
     print('p-val =', p)
 
