@@ -478,14 +478,15 @@ def all_shortest_paths(string1, string2, plot = False):
     
 
 
-def permutation_test_on_correlation(array1,array2, n_samples):
+def permutation_test_on_correlation(array1,array2, n_samples, tail = 2):
     '''
     This function may take a long time 
     '''
     
     # Compute observed correlation: r_obs
     r_obs = correlation_coef(array1,array2)
-    
+    print("r observed: ", r_obs)
+
     # Initialize permutation replicates: perm_replicates
     perm_replicates = np.empty(n_samples)
     # Draw replicates
@@ -495,6 +496,12 @@ def permutation_test_on_correlation(array1,array2, n_samples):
         # Compute Pearson correlation
         perm_replicates[i] = correlation_coef(array1_permuted, array2)
     # Compute p-value: p
-    p = np.sum(perm_replicates>r_obs)/len(perm_replicates)
-    print('p-val =', p)    
-    
+    # modified to two-tailed test by adding np.abs()
+    # plt.hist(perm_replicates)
+    # plt.show()
+    if tail == 2:
+        p = np.sum(np.abs(perm_replicates)>r_obs)/len(perm_replicates)
+    elif tail == 1:
+        p = np.sum(perm_replicates>r_obs)/len(perm_replicates)
+    print('p-val =', p)
+
